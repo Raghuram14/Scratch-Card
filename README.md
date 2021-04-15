@@ -7,7 +7,7 @@ REST API's
 1. POST: Add Customer Details
     Requset Body: {
         isActive: true,
-        userEmail: raghu.r14@gmail.com,
+        userEmail: raghuram.r14@gmail.com,
         firstName: Raghu,
         lastName: R
     }
