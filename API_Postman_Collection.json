@@ -1,0 +1,238 @@
+{
+	"info": {
+		"_postman_id": "cd3b4d77-16c8-49eb-8ee2-3184f5dbd7cb",
+		"name": "Scratch-Card",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add Customer Details",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"isActive\": true,\n    \"userEmail\": \"raghu.r14@gmail.com\",\n    \"lastName\": \"R\",\n    \"firstName\": \"Raghu\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/v0/customer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"v0",
+						"customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Customer Details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/v0/customer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"v0",
+						"customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update customer details",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"isActive\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/v0/customer/cb1fa629-406f-4078-bdcb-397a8215e834",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"v0",
+						"customer",
+						"cb1fa629-406f-4078-bdcb-397a8215e834"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete customer details",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/v0/customer/28444961-93a4-4ebc-b867-284d265ff3db",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"v0",
+						"customer",
+						"28444961-93a4-4ebc-b867-284d265ff3db"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Scratch Card Details",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/v0/scratch-card/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"v0",
+						"scratch-card",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Scratch Card Details",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"numOfScratchCards\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/v0/scratch-card/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"v0",
+						"scratch-card",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Transaction Details",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"scrachCardid\": \"318862fe-d4ee-414f-bbec-d8c1e86384e3\",\n    \"userId\": \"cb1fa629-406f-4078-bdcb-397a8215e834\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/v0/transactions/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"v0",
+						"transactions",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Transaction Details",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\": \"f5e31e98-a8d7-44c2-a087-722317d7f0ee\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/v0/transactions/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"v0",
+						"transactions",
+						"get"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
